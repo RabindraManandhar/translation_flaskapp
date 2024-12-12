@@ -9,10 +9,18 @@
 </head>
 <body>
     <h1>Translate English to Finnish</h1>
-    <form method="post" action="">
+    <form method="post" action="/">
         <label for="text">Enter Text:</label>
         <input type="text" name="text" id="text" required>
         <button type="submit">Translate</button>
     </form>
+
+    <!-- Display the translation result if available -->
+    {% if translation %}
+    <div style="margin-top: 20px;">
+        <h2>Translation:</h2>
+        <p>{{ translation }}</p>
+    </div>
+    {% endif %}
 </body>
 </html>

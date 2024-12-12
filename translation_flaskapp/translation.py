@@ -8,6 +8,9 @@ bp = Blueprint('translation', __name__)
 
 @bp.route('/', methods=['GET', 'POST'])
 def index():
+
+    translation = None  # Initialize translation result
+
     if request.method == 'POST':
         # Extract user input from the form
         user_input = request.form['text']
@@ -20,9 +23,8 @@ def index():
             inputs = tokenizer.encode(user_input, return_tensors="pt")
             outputs = model.generate(inputs)
             translation = tokenizer.decode(outputs[0], skip_special_tokens=True)
-            return jsonify({"message": f"Translated (Finnish): {translation}"})
         except Exception as e:
             return jsonify({"error": "An error occurred while processing your request"}), 500
 
     # Render the form page for GET requests
-    return render_template('index.html')
+    return render_template('index.html', translation=translation)
