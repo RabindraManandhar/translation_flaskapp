@@ -1,0 +1,49 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Flask cache and session files
+instance/
+*.log
+
+# Flask .env file
+.env
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# pytest cache
+.cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS and system files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# IDE Settings
+.idea/
+*.iml

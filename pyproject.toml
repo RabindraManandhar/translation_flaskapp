@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core>=3.4.0"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "translation_flaskapp"
+version = "1.0.0"
+description = "A small Flask app to translate text written in text field when a button is pressed."
+authors = [
+    {name = "Rabindra Manandhar", email = "rabindra.mdr@gmail.com"}
+]
+dependencies = [
+    "Flask>=3.1.0",
+    "transformers>=4.47.0",
+    "python-dotenv>=1.0.1"
+]
+requires-python = ">=3.12"
+
+
+[project.scripts]
+run-translation-app = "translation_flaskapp.__main__:main"
