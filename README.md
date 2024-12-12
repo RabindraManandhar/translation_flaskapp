@@ -16,7 +16,7 @@ A Flask application that translates user input text from English to Finnish usin
 
 1. Clone the repository:
 
-   - git clone https://github.com/rabindramanandhar/translation_flaskapp.git
+   - git clone https://github.com/RabindraManandhar/translation_flaskapp.git
    - cd translation_flaskapp
 
 2. Create and activate a virtual environment
@@ -30,7 +30,7 @@ A Flask application that translates user input text from English to Finnish usin
 
 4. Configuration Using .env
 
-The app supports configuration using a '.env' file. Create a '.env' file in the root directory with the following variables:
+   The app supports configuration using a '.env' file. Create a '.env' file in the root directory with the following variables:
 
    - FLASK_RUN_HOST=0.0.0.0
    - FLASK_RUN_PORT=5000
