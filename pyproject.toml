@@ -21,7 +21,11 @@ dependencies = [
     "python-dotenv>=1.0.1"
 ]
 requires-python = ">=3.12"
+readme = "README.md"
 
+[project.urls]
+homepage = "https://github.com/RabindraManandhar/translation_flaskapp"
+repository = "https://github.com/RabindraManandhar/translation_flaskapp"
 
 [project.scripts]
 run-translation-app = "translation_flaskapp.__main__:main"
